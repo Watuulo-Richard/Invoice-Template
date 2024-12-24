@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    font-family: $default-font;
+    color: $invoice-text-color;
+    background: $bg-background;
+    @media (max-width: 495px){
+        max-width: 500px;
+        max-width: 2rem auto;
+    }
+}

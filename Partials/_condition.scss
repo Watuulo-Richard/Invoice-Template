@@ -1,0 +1,15 @@
+.condition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+    border-bottom: $invoice-text-color solid 1px;
+    .left-condition {
+
+    }
+    .right-condition {
+        .name {
+            color: $invoice-text-color;
+        }
+    }
+}

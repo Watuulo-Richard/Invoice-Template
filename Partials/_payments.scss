@@ -1,0 +1,23 @@
+.payments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 3rem 0rem;
+    .left-payment {
+        & h3 {
+            font-weight: bold;
+        }
+        & p {
+            
+        }
+    }
+    .right-payment {
+        .total {
+            background: $invoice-text-color;
+            color: $invoice-bg;
+            font-weight: bold;
+            padding: 1rem 2rem;
+        }
+    }
+}

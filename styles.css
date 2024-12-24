@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  font-family: "Montserrat", serif;
+  color: #111827;
+  background: rgba(198, 203, 212, 0.5882352941);
+}
+@media (max-width: 495px) {
+  body {
+    max-width: 500px;
+    max-width: 2rem auto;
+  }
+}
+
+#invoiceContainer {
+  width: 100%;
+  background: #f9fafb;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+#invoiceContainer .invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 0rem;
+  border-bottom: red solid 1rem;
+}
+#invoiceContainer .invoice-header h3 {
+  border: #111827 solid 2px;
+  padding: 1rem 2rem;
+}
+#invoiceContainer .invoice-header h2 {
+  font-size: 4.8rem;
+  font-weight: bolder;
+}
+#invoiceContainer .invoice-sub-main {
+  padding: 4.8rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#invoiceContainer .invoice-sub-main .left-sub-heading {
+  font-size: 1.6rem;
+}
+#invoiceContainer .invoice-sub-main .address {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+@media (max-width: 495px) {
+  #invoiceContainer {
+    width: 100%;
+    background: #f9fafb;
+    padding: 4rem;
+    border-radius: 1rem;
+  }
+  #invoiceContainer .invoice-header {
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 1.6rem 0rem;
+    border-bottom: red solid 1rem;
+  }
+  #invoiceContainer .invoice-header h3 {
+    border: #111827 solid 2px;
+    padding: 1rem 2rem;
+  }
+  #invoiceContainer .invoice-header h2 {
+    font-size: 3.2rem;
+    font-weight: bolder;
+  }
+  #invoiceContainer .invoice-sub-main {
+    padding: 4.8rem 0rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+  #invoiceContainer .invoice-sub-main .left-sub-heading {
+    font-size: 1.6rem;
+  }
+  #invoiceContainer .invoice-sub-main .address {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+}
+
+table {
+  width: 100%;
+  color: #111827;
+  font-weight: bold;
+  border-collapse: collapse;
+}
+table thead tr {
+  background: #111827;
+  color: #f9fafb;
+}
+table thead tr th {
+  padding: 1.6rem 2rem;
+}
+table tbody tr td {
+  text-align: center;
+  padding: 1.6rem 2rem;
+}
+table tbody tr:nth-child(even) {
+  background: rgba(198, 203, 212, 0.5882352941);
+}
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody {
+    display: block;
+  }
+  table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  table tbody tr td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 1024px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody {
+    display: block;
+  }
+  table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  table tbody tr td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.payments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 3rem 0rem;
+}
+.payments .left-payment h3 {
+  font-weight: bold;
+}
+.payments .right-payment .total {
+  background: #111827;
+  color: #f9fafb;
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+
+.condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  border-bottom: #111827 solid 1px;
+}
+.condition .right-condition .name {
+  color: #111827;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,85 @@
+table {
+    width: 100%;
+    color: $invoice-text-color; 
+    font-weight: bold;
+    border-collapse: collapse;
+    thead {
+        tr {
+            background: $invoice-text-color;
+            color: $invoice-bg;
+            th {
+                padding: 1.6rem 2rem;
+            }
+
+        }  
+    }
+    tbody {
+        
+        tr{
+            
+            td {
+                text-align: center;
+                padding: 1.6rem 2rem;
+            } 
+        }tr:nth-child(even){
+            background: $bg-background;
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        thead {
+            display: none; // Hide table headers on small screens
+        }
+
+        tbody {
+            display: block;
+            tr {
+                display: block;
+                margin-bottom: 1rem;
+                td {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+                    &:before {
+                        content: attr(data-label); // Use data-label to show header-like information
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        // flex-basis: 50%;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        thead {
+            display: none; // Hide table headers on small screens
+        }
+
+        tbody {
+            display: block;
+            tr {
+                display: block;
+                margin-bottom: 1rem;
+                td {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+                    &:before {
+                        content: attr(data-label); // Use data-label to show header-like information
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        // flex-basis: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
